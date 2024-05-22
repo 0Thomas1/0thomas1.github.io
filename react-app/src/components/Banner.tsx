@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = () => {
   return (
     <div className="container-fluid text-center d-flex justify-content-center align-items-center py-5">
