@@ -10,7 +10,7 @@ export const projects: CardProps[] = [
   },
   {
     title: "Prime Number",
-    description: "A simple prime number generator using React",
+    description: "A simple application about prime number using Python.",
     gitLink: "https://github.com/0Thomas1/prime_no.",
     img: "",
   },
