@@ -1,3 +1,4 @@
+import React from "react";
 
 const Banner = () => {
   return (
@@ -5,7 +6,7 @@ const Banner = () => {
       <img
         className="w-25 border border-dark rounded-circle border-3"
         id="protrait"
-        src="src/assets/protrait.JPG"
+        src="public/assets/protrait.JPG"
         alt="protrait"
       />
       <div className="d-flex flex-column mx-4">
