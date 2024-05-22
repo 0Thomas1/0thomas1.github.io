@@ -4,7 +4,7 @@ const Banner = () => {
       <img
         className="w-25 border border-dark rounded-circle border-3"
         id="protrait"
-        src="public/assets/protrait.JPG"
+        src="assets/protrait.JPG"
         alt="protrait"
       />
       <div className="d-flex flex-column mx-4">

@@ -2,7 +2,7 @@ import { CardProps } from "../components/Card";
 import { InfoProps } from "../components/Experience";
 export const projects: CardProps[] = [
   {
-    img: "public/assets/exit-logo.jpg",
+    img: "assets/exit-logo.jpg",
     title: " Exit Cafe & Lounge webpage design",
     description: "Responsive design for a cafe & lounge using Bootstrap and js",
     gitLink: "https://github.com/0Thomas1/Exit-Lounge-Webpage",
@@ -15,7 +15,7 @@ export const projects: CardProps[] = [
     img: "",
   },
   {
-  img: "public/assets/PCBee_logo.png",
+  img: "assets/PCBee_logo.png",
     title: "PCBee",
     description:
       "An AI-assisted PC part picker website utilizing eBay's API and GPT API, developed to simplify the PC building process while adhering to proper SDLC methodologies.",
