@@ -7,14 +7,14 @@ export interface CardProps {
 }
 const Card = ({ img, title, description, link, gitLink }: CardProps) => {
   return (
-    <div className="card shadow h-100">
+    <div className="card shadow-lg h-100">
       {/* if img is not provided, render nothing */
-      img ? (<img className="card-img-top" src={img} alt={title + " image"}></img>) : null}
-
+      img ? (<img className="card-img-top h-75" src={img} alt={title + " image"}></img>) : null}
+ 
       
-      <div className="card-body pb-1 px-3">
+      <div className="card-body px-3 ">
         <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
+        <p className="card-text my-0">{description}</p>
         <div className="d-flex justify-content-end">
           {
             /* if link exists, render the link */
