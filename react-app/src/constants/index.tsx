@@ -12,10 +12,10 @@ export const projects: CardProps[] = [
     title: "Prime Number",
     description: "A simple application about prime number using Python.",
     gitLink: "https://github.com/0Thomas1/prime_no.",
-    img: "",
+    img: "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2018/08/pythonfeature.png",
   },
   {
-  img: "assets/PCBee_logo.png",
+    img: "assets/PCBee_logo.png",
     title: "PCBee",
     description:
       "An AI-assisted PC part picker website utilizing eBay's API and GPT API, developed to simplify the PC building process while adhering to proper SDLC methodologies.",

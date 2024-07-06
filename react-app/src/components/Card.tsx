@@ -8,22 +8,29 @@ export interface CardProps {
 const Card = ({ img, title, description, link, gitLink }: CardProps) => {
   return (
     <div className="card shadow-lg h-100">
-      {/* if img is not provided, render nothing */
-      img ? (<img className="card-img-top h-75" src={img} alt={title + " image"}></img>) : null}
- 
-      
-      <div className="card-body px-3 ">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text my-0">{description}</p>
-        <div className="d-flex justify-content-end">
+      {
+        /* if img is not provided, render nothing */
+        img ? (
+          <img
+            className="card-img-top h-75"
+            src={img}
+            alt={title + " image"}
+          ></img>
+        ) : null
+      }
+
+      <div className="d-flex flex-column card-body px-3 ">
+        <h5 className="card-title h-25">{title}</h5>
+        <p className="card-text my-0 h-50">{description}</p>
+        <div className="d-flex justify-content-end h-25 ">
           {
             /* if link exists, render the link */
             link ? (
-              <a href={link} target="_blank" rel="noopener noreferrer">
+              <a className="align-text-bottom" href={link} target="_blank" rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="30"
+                  height="30"
                   fill="currentColor"
                   className="bi bi-link-45deg text-black"
                   viewBox="0 0 16 16"
@@ -34,11 +41,11 @@ const Card = ({ img, title, description, link, gitLink }: CardProps) => {
               </a>
             ) : null
           }
-          <a href={gitLink} target="_blank" rel="noopener noreferrer">
+          <a className="align-text-bottom" href={gitLink} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="30"
+              height="30"
               fill="currentColor"
               className="bi bi-github text-black"
               viewBox="0 0 16 16"
