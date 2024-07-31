@@ -22,6 +22,12 @@ export const projects: CardProps[] = [
     link: "https://pcbee.onrender.com/",
     gitLink: "https://github.com/Team-Lorem-Ipsum/PCBee",
   },
+  {
+    img:"https://placehold.co/600x400",
+    title:"MHW Check List",
+    description:"A simple check list for Monster Hunter World game.",
+    gitLink:"https://github.com/Scansy/mhw-checklist"
+  }
 ];
 
 export const experience: InfoProps[] = [

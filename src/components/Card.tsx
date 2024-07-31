@@ -1,5 +1,5 @@
 export interface CardProps {
-  img: string;
+  img?: string;
   title: string;
   description: string;
   link?: string; // ? means optional
