@@ -42,11 +42,11 @@ export const education: InfoProps[] = [
   {
     title: "Associate of Science in Computer Science",
     date: "2022-2024",
-    institude: "Langara College",
+    institution: "Langara College",
   },
   {
     title: "Bachelor of Science in Computer Science",
     date: "2024",
-    institude: "Simon Fraser University",
+    institution: "Simon Fraser University",
   },
 ];
