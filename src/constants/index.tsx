@@ -23,11 +23,12 @@ export const projects: CardProps[] = [
     gitLink: "https://github.com/Team-Lorem-Ipsum/PCBee",
   },
   {
-    img:"https://placehold.co/600x400",
-    title:"MHW Check List",
-    description:"A simple check list for Monster Hunter World game.",
-    gitLink:"https://github.com/Scansy/mhw-checklist"
-  }
+    img: "https://placehold.co/600x400",
+    title: "MHW Check List",
+    description:
+      "A simple to-do list website for tracking desired weapons in Monster Hunter World. Features include account systems using MongoDB, full access to MHW weapons via API, and total material tracking for your weapons.",
+    gitLink: "https://github.com/Scansy/mhw-checklist",
+  },
 ];
 
 export const experience: InfoProps[] = [
