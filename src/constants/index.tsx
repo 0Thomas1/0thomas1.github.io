@@ -29,6 +29,13 @@ export const projects: CardProps[] = [
       "A simple to-do list website for tracking desired weapons in Monster Hunter World. Features include account systems using MongoDB, full access to MHW weapons via API, and total material tracking for your weapons.",
     gitLink: "https://github.com/Scansy/mhw-checklist",
   },
+  {
+    img: "https://placehold.co/600x400",
+    title: "Kanban Board",
+    description:
+      "A simple Kanban board website for tracking tasks. Features include account systems using MongoDB.",
+    gitLink: "https://github.com/0Thomas1/kanban"
+  }
 ];
 
 export const experience: InfoProps[] = [
