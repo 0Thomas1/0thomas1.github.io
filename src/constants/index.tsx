@@ -35,6 +35,13 @@ export const projects: CardProps[] = [
     description:
       "A simple Kanban board website for tracking tasks. Features include account systems using MongoDB.",
     gitLink: "https://github.com/0Thomas1/kanban"
+  },
+  {
+    img: "https://placehold.co/600x400",
+    title: "Pixoo kanban",
+    description:
+      "A simple kanban board display on a Pixoo 64 Led display. Using DB from the previous project.",
+    gitLink: "https://github.com/0Thomas1/Pixoo-Kanban"
   }
 ];
 
