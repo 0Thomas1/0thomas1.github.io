@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import FadeIn from "./components/FadeIn";
+import ContactForm from "./components/ContactForm";
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
       </FadeIn>
       <Experience />
       <Education />
+      <ContactForm />
     </div>
   );
 }
