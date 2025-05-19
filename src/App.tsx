@@ -15,7 +15,7 @@ function App() {
       </FadeIn>
       <Experience />
       <Education />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 }
