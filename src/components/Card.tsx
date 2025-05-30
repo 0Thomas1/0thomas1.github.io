@@ -18,8 +18,6 @@ const Card = ({ img, title, description, link, gitLink }: CardProps) => {
           window.open(gitLink, "_blank", "noopener,noreferrer");
         }
       }}
-     
-   
     >
       {
         /* if img is not provided, render nothing */
