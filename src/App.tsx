@@ -7,15 +7,6 @@ import FadeIn from "./components/FadeIn";
 //import ContactForm from "./components/ContactForm";
 import { useEffect } from "react";
 function App() {
-    useEffect(() => {
-        const webhookUrl = import.meta.env.VITE_VANCOUVER_TRAIL_WEBHOOK_URL;
-        
-    fetch(webhookUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ event: "page_loaded", timestamp: Date.now() }),
-    });
-  }, []);
   return (
     <div>
       <Nav />
@@ -25,7 +16,6 @@ function App() {
       </FadeIn>
       <Experience />
       <Education />
-     
     </div>
   );
 }
