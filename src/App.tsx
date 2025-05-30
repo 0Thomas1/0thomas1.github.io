@@ -4,8 +4,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import FadeIn from "./components/FadeIn";
-//import ContactForm from "./components/ContactForm";
-import { useEffect } from "react";
+
 function App() {
   return (
     <div>
