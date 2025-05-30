@@ -34,15 +34,23 @@ export const projects: CardProps[] = [
     title: "Kanban Board",
     description:
       "A simple Kanban board website for tracking tasks. Features include account systems using MongoDB.",
-    gitLink: "https://github.com/0Thomas1/kanban"
+    gitLink: "https://github.com/0Thomas1/kanban",
   },
   {
     img: "https://placehold.co/600x400",
     title: "Pixoo kanban",
     description:
       "A simple kanban board display on a Pixoo 64 Led display. Using DB from the previous project.",
-    gitLink: "https://github.com/0Thomas1/Pixoo-Kanban"
-  }
+    gitLink: "https://github.com/0Thomas1/Pixoo-Kanban",
+  },
+  {
+    img: "https://placehold.co/600x400",
+    title: "Vancouver Trails API",
+    description:
+      "A simple API for Vancouver trails, providing information about various hiking trails in the Vancouver area.",
+    gitLink: "",
+    link: "https://vancouver-trails-api-5apnr.ondigitalocean.app/",
+  },
 ];
 
 export const experience: InfoProps[] = [
