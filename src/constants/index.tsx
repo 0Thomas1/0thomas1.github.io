@@ -6,8 +6,8 @@ export const projects: CardProps[] = [
     title: "Kanban MCP",
     description:
       "Kanban-style task manager with Node.js, TypeScript, and MongoDB. Features MCP server for agent automation, robust APIs, Zod validation, JSON caching, and real-time updates.",
-    gitLink: "",
-    link: "https://vancouver-trails-api-5apnr.ondigitalocean.app/",
+    gitLink: "https://github.com/0Thomas1/Kanban-MCP",
+    link: "",
   },
   {
     img: "https://placehold.co/600x400",
