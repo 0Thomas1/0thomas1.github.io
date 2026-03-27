@@ -12,8 +12,11 @@ const Banner = () => {
         <div className=" display-5 fw-bold">Thomas Cheng</div>
         <p>Computer Science Student</p>
         <div className="d-flex justify-content-center">
-          <a className="bg-dark rounded-pill text-white px-3 py-2  link-underline link-underline-opacity-0">
-            Contact Info
+          <a
+            href="#resume"
+            className="bg-dark rounded-pill text-white px-3 py-2  link-underline link-underline-opacity-0"
+          >
+            Resume
           </a>
         </div>
         <div className="d-flex justify-content-center text-white">
