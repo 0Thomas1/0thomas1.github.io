@@ -2,6 +2,8 @@ export interface CardProps {
   img?: string;
   title: string;
   description: string;
+  category: string;
+  tech: string[];
   link?: string; // ? means optional
   gitLink?: string;
 }
