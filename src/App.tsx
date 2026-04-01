@@ -11,8 +11,9 @@ function App() {
     <div>
       <Nav />
       <Banner />
+      <FadeIn>
         <Projects />
-      
+      </FadeIn>
       <Experience />
       <Education />
       <Resume />
