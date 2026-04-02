@@ -1,10 +1,117 @@
-.navbar-nav a:hover{
-  color: aliceblue;
- transform: scale(1.1);
- transition: 0.5s;
-}
-.card:hover{
-  transform: scale(1.02);
-  transition: 0.75s;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
 
+:root {
+  /* Elegant, professional color palette overriding Bootstrap defaults */
+  --bs-font-sans-serif:
+    "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --bs-body-color: #334155; /* Muted Slate for better reading */
+  --bs-body-bg: #f8fafc; /* Very subtle off-white/slate for background */
+  --bs-primary: #0f172a; /* Deep Slate as the primary accent */
+  --bs-primary-rgb: 15, 23, 42;
+  --bs-secondary: #64748b;
+  --bs-link-color: #2563eb;
+  --bs-link-hover-color: #1d4ed8;
+}
+
+html {
+  scroll-padding-top: 80px; /* Offsets anchor links for the sticky navbar */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #0f172a; /* Darker headings */
+  letter-spacing: -0.025em; /* Tighter kerning feels more modern */
+}
+
+/* Subtler Navbar Hover - removing the jarring scale */
+.navbar-nav .nav-link {
+  transition:
+    color 0.2s ease-in-out,
+    opacity 0.2s ease;
+  opacity: 0.8;
+}
+
+.navbar-nav .nav-link:hover {
+  opacity: 1;
+  color: var(--bs-primary);
+}
+
+/* Professional Card Interactions */
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Softer borders */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px); /* Lift up instead of scale up */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Crisp focus states for accessibility */
+:focus-visible {
+  outline: 2px solid var(--bs-link-color);
+  outline-offset: 2px;
+}
+
+/* --- Exciting Banner Utilities --- */
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--bs-primary) 0%,
+    rgba(37, 99, 235, 0.8) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.wave-emoji {
+  display: inline-block;
+  animation: wave 2.5s infinite ease-in-out;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

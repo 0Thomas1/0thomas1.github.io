@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projects } from "../constants";
 import Card from "./Card";
+import FadeIn from "./FadeIn";
 const Projects = () => {
   const [filter, setFilter] = useState("All");
   const categories = ["All", ...new Set(projects.map((p) => p.category))];
@@ -18,7 +19,7 @@ const Projects = () => {
           {categories.map((category) => (
             <button
               key={category}
-              className={`btn ${filter === category ? "btn-primary" : "btn-outline-primary"}`}
+              className={`btn rounded-pill px-4 ${filter === category ? "btn-primary fw-semibold shadow-sm" : "btn-outline-secondary fw-medium"}`}
               onClick={() => setFilter(category)}
             >
               {category}
@@ -26,13 +27,15 @@ const Projects = () => {
           ))}
         </div>
         {/*Projects grid*/}
-        <div className="row">
-          {filteredProjects.map((project) => (
-            <div key={project.title} className="col-md-6 col-lg-4 mb-4">
-              <Card {...project} />
-            </div>
-          ))}
-        </div>
+        <FadeIn>
+          <div className="row">
+            {filteredProjects.map((project) => (
+              <div key={project.title} className="col-md-6 col-lg-4 mb-4">
+                <Card {...project} />
+              </div>
+            ))}
+          </div>
+        </FadeIn>
         {/* Footer Note */}
         <div className="mt-5 text-center">
           <p className="text-muted">
@@ -43,7 +46,6 @@ const Projects = () => {
             >
               GitHub profile
             </a>
-            .
           </p>
         </div>
       </div>
