@@ -1,27 +1,49 @@
 const Nav = () => {
-  return (
-    <nav
-      className="navbar navbar-expand-md bg-dark w-100 px-5 sticky-top"
-      data-bs-theme="dark"
-    >
-      <a className="navbar-brand" href="#">
-        <span className=" display-5">TC</span>
-      </a>
+  const handleNavClick = () => {
+    const navCollapse = document.getElementById("navCollapse");
+    const toggler = document.querySelector(".navbar-toggler");
 
-      <div className="collapse navbar-collapse" id="navCollapse">
-        <div className="navbar-nav me-auto">
-          <a className="nav-link" href="#projects">
-            Projects
-          </a>
-          <a className="nav-link" href="#experience">
-            Experience
-          </a>
-          <a className="nav-link" href="#education">
-            Education
-          </a>
-          <a className="nav-link" href="#resume">
-            Resume
-          </a>
+    // If the mobile menu is open (has 'show' class), trigger a click on the toggler to cleanly close it
+    if (navCollapse?.classList.contains("show") && toggler) {
+      (toggler as HTMLElement).click();
+    }
+  };
+
+  return (
+    <nav className="navbar navbar-expand-md bg-white sticky-top shadow-sm py-3">
+      <div className="container">
+        <a className="navbar-brand fw-bold fs-4" href="#">
+          <span className="text-primary">TC</span>
+        </a>
+
+        {/* Mobile toggle button (was missing!) */}
+        <button
+          className="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navCollapse"
+          aria-controls="navCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navCollapse">
+          <div className="navbar-nav ms-auto fw-medium gap-2">
+            <a className="nav-link" href="#projects" onClick={handleNavClick}>
+              Projects
+            </a>
+            <a className="nav-link" href="#experience" onClick={handleNavClick}>
+              Experience
+            </a>
+            <a className="nav-link" href="#education" onClick={handleNavClick}>
+              Education
+            </a>
+            <a className="nav-link" href="#resume" onClick={handleNavClick}>
+              Resume
+            </a>
+          </div>
         </div>
       </div>
     </nav>
