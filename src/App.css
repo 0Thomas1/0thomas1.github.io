@@ -13,6 +13,11 @@
   --bs-link-hover-color: #1d4ed8;
 }
 
+html {
+  scroll-padding-top: 80px; /* Offsets anchor links for the sticky navbar */
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--bs-font-sans-serif);
   color: var(--bs-body-color);
