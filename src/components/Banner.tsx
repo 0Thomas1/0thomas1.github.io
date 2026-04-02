@@ -31,7 +31,7 @@ const Banner = () => {
 
           <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start align-items-center">
             <a
-              href="#resume"
+              href="/resume.pdf"
               className="btn btn-primary btn-lg px-4 rounded-pill shadow-sm"
             >
               View Resume

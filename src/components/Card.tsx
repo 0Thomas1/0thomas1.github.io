@@ -5,6 +5,7 @@ export interface CardProps {
   title: string;
   description: string;
   category: string;
+  subcategory?: string[];
   tech: string[];
   link?: string; // ? means optional
   gitLink?: string;

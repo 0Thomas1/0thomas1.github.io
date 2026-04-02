@@ -3,11 +3,11 @@ import { InfoProps } from "../components/Experience";
 export const projects: CardProps[] = [
   {
     img: "assets/Mcp_Icon.png",
-    title: "Kanban MCP",
-    tech: ["Node.js", "TypeScript", "MongoDB"],
+    title: "MCP-Enabled Task System(MTS)",
+    tech: ["Node.js", "TypeScript", "MongoDB", "MCP Server", "Zod", "python"],
     category: "AI/ML",
     description:
-      "Kanban-style task manager with Node.js, TypeScript, and MongoDB. Features MCP server for agent automation, robust APIs, Zod validation, JSON caching, and real-time updates.",
+    "MCP-Enabled Task System(MTS) is a task management/display system that utilizes a custom MCP server to manage and display tasks on a Pixoo 64 LED display.",
     gitLink: "https://github.com/0Thomas1/Kanban-MCP",
     link: "",
   },
@@ -20,23 +20,6 @@ export const projects: CardProps[] = [
       "A simple API for Vancouver trails, providing information about various hiking trails in the Vancouver area.",
     gitLink: "",
     link: "https://vancouver-trails-api-5apnr.ondigitalocean.app/",
-  },{
-    img: "assets/kanban.jpg",
-    title: "Kanban Board",
-    tech: ["React", "TypeScript", "MongoDB"],
-    category: "Web Development",
-    description:
-      "A simple Kanban board website for tracking tasks. Features include account systems using MongoDB.",
-    gitLink: "https://github.com/0Thomas1/kanban",
-  },
-  {
-    img: "https://placehold.co/600x400",
-    title: "Pixoo kanban",
-    tech: ["Node.js", "TypeScript", "MongoDB"],
-    category: "Web Development",
-    description:
-      "A simple kanban board display on a Pixoo 64 Led display. Using DB from the previous project.",
-    gitLink: "https://github.com/0Thomas1/Pixoo-Kanban",
   },
   {
     img: "assets/PCBee_logo.png",
