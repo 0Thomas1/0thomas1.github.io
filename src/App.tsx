@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Resume from "./components/Resume";
+// import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Experience />
       <Education />
       <Resume />
+      {/* <ContactForm /> */}
     </div>
   );
 }

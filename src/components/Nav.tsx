@@ -43,6 +43,9 @@ const Nav = () => {
             <a className="nav-link" href="#resume" onClick={handleNavClick}>
               Resume
             </a>
+            {/* <a className="nav-link" href="#contact" onClick={handleNavClick}>
+              Contact
+            </a> */}
           </div>
         </div>
       </div>
