@@ -19,7 +19,7 @@ const Projects = () => {
           {categories.map((category) => (
             <button
               key={category}
-              className={`btn ${filter === category ? "btn-primary" : "btn-outline-primary"}`}
+              className={`btn rounded-pill px-4 ${filter === category ? "btn-primary fw-semibold shadow-sm" : "btn-outline-secondary fw-medium"}`}
               onClick={() => setFilter(category)}
             >
               {category}
