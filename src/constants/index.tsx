@@ -8,7 +8,7 @@ export const projects: CardProps[] = [
     category: "AI/ML",
     description:
     "MCP-Enabled Task System(MTS) is a task management/display system that utilizes a custom MCP server to manage and display tasks on a Pixoo 64 LED display.",
-    gitLink: "https://github.com/0Thomas1/Kanban-MCP",
+    gitLink: "https://github.com/0Thomas1/MCP-Enabled-Task-System-MTS",
     link: "",
   },
   {
