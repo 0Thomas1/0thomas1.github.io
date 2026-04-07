@@ -2,19 +2,28 @@ import { CardProps } from "../components/Card";
 import { InfoProps } from "../components/Experience";
 export const projects: CardProps[] = [
   {
+    img: "https://placehold.co/600x400",
+    title: "CS Agentic Resume Builder",
+    tech: ["Python", "Google ADK", "Google GenAI","GitHub API"],
+    category: "AI/ML",
+    description:
+        "An Agentic Resume Builder for Computer Science students that utilizes Google GenAI and GitHub API to create personalized resumes based on a user's GitHub profile and job requirements. ",
+    gitLink: "https://github.com/0Thomas1/CS-Agentic-Resume-Builder"
+  },
+  {
     img: "assets/Mcp_Icon.png",
     title: "MCP-Enabled Task System(MTS)",
     tech: ["Node.js", "TypeScript", "MongoDB", "MCP Server", "Zod", "python"],
     category: "AI/ML",
     description:
-    "MCP-Enabled Task System(MTS) is a task management/display system that utilizes a custom MCP server to manage and display tasks on a Pixoo 64 LED display.",
+      "MCP-Enabled Task System(MTS) is a task management/display system that utilizes a custom MCP server to manage and display tasks on a Pixoo 64 LED display.",
     gitLink: "https://github.com/0Thomas1/MCP-Enabled-Task-System-MTS",
     link: "",
   },
   {
     img: "https://placehold.co/600x400",
     title: "Vancouver Trails API",
-    tech: ["Node.js", "Express", "Supabase","Docker","Rest API"],
+    tech: ["Node.js", "Express", "Supabase", "Docker", "Rest API"],
     category: "Web Development",
     description:
       "A simple API for Vancouver trails, providing information about various hiking trails in the Vancouver area.",
@@ -24,7 +33,14 @@ export const projects: CardProps[] = [
   {
     img: "assets/PCBee_logo.png",
     title: "PCBee",
-    tech: ["Node.js", "Express", "MongoDB","eBay API","OpenAI API","Unit Testing"],
+    tech: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "eBay API",
+      "OpenAI API",
+      "Unit Testing",
+    ],
     category: "Web Development",
     description:
       "An AI-assisted PC part picker website utilizing eBay's API and OpenAI API, developed to simplify the PC building process while adhering to proper SDLC methodologies.",
@@ -40,7 +56,6 @@ export const projects: CardProps[] = [
       "A simple to-do list website for tracking desired weapons in Monster Hunter World. Features include account systems using MongoDB, full access to MHW weapons via API, and total material tracking for your weapons.",
     gitLink: "https://github.com/Scansy/mhw-checklist",
   },
-  
 ];
 
 export const experience: InfoProps[] = [
