@@ -40,6 +40,7 @@ export const projects: CardProps[] = [
       "eBay API",
       "OpenAI API",
       "Unit Testing",
+      "OAuth",
     ],
     category: "Web Development",
     description:
